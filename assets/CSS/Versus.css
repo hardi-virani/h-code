@@ -1,0 +1,191 @@
+/* body
+{
+    background-color: #f8edeb;
+} */
+
+/* ------------> Nav Bar <--------------- */
+.nav-item {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #ffecd1; /* the color */
+    /* --c: #f5ebe0;  */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.nav-item:hover 
+{
+    --_p: 100%;
+    --_s: .25s;
+}
+
+#logo
+{
+    height: 30px;
+    width: 100px;
+}
+  
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.785);
+}
+
+.collapse
+{
+    display: flex;
+    /* border: 2px solid rebeccapurple; */
+    justify-content: space-around;
+}
+
+.navbar-nav 
+{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.nav-item
+{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#profile_pic
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+
+/* -----------------> Below Nav Bar <-------------------- */
+
+#time-view-search
+{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+
+#time
+{
+    margin-top: 4.1em;
+    color: rgba(244, 239, 239, 0.763);
+}
+
+.search
+{
+    margin-top: 2em;
+}
+
+#search
+{
+    margin-top: 2em;
+    /* margin-bottom: 2em; */
+    height: 25px;
+    padding: 0px 5px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* --------------------> Table <---------------------- */
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: pink;
+
+}
+.table
+{
+    margin-top: 2em;
+    box-sizing: border-box;
+    background-color: rgb(34, 31, 30);
+    z-index: 9999;
+
+}
+
+table td, .table th {
+    border-top: 0px;
+}
+
+.thead th
+{
+    color: #dad4d4;
+    border-color:  rgb(34, 31, 30);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+    font-weight: 1050;
+}
+
+
+.rows
+{
+    color: #f1eaea;
+    background-color: #525154d6;
+    border-color: #0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    /* background-color: #fff; */
+
+}
+
+#row2
+{
+    background-color: #5e81a7e4;
+}
+
+#row3
+{
+    background-color: #5e81a7e4;
+}
+
+#logos
+{
+    height: 30px;
+    width: 30px;
+}
+
+/* --------------------> DropDown <-------------------- */
+
+.btn-group
+{
+    margin-top: 2em;
+    margin-left: 10em;
+
+}
+
+
+/* --------> HOVER OF NAVBAR COLOUR <----------- */
+
+.navbar.scrolled
+{
+    background-color: black;
+    transition: 500ms;
+}
+
+
+/* ------------> Background animation <--------------- */
+#particles-js{
+    width: 100%;
+    height: 100%;
+  background-color: black;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    top: 0px;
+    z-index:-1;
+}
+
